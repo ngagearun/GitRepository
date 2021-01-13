@@ -7,10 +7,6 @@ public class ConstructorDemo {
 	
 	ConstructorDemo(int b,int a){
 		System.out.println("I am in constructor method");
-		
-		
-		
-		
 	}
 	
 	
