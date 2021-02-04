@@ -92,7 +92,7 @@ public class CreateAnAccount extends ReusableTestNGSelenium {
 	}
 	
 	
-	@Test(priority=5,groups="smoke",dataProvider="accountcreation")
+	@Test(priority=5,groups="sanity",dataProvider="accountcreation")
 	public void create_email_id(String emailid,String fname,String lname,String password,String retypepassword) throws InterruptedException {
 		Random r=new Random();
 		int num=r.nextInt(500);
