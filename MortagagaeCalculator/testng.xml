@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="ApplicationName" verbose="1" >
+  <test name="RegressionTesting" >
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="appurl" value="https://candidate.psiexams.com/"></parameter>
+  <groups>
+  <run>
+    <include name="smoke"></include>
+  </run>  
+  </groups>
+    <classes>
+       <class name="com.psiexams.businessscripts.CreateAnAccount" />
+       <class name="com.psiexams.businessscripts.Registration" />
+    </classes>
+  </test>
+
+</suite>
