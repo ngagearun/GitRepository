@@ -31,7 +31,7 @@ public class ReusableTestNGSelenium {
 public static WebDriver driver;
 Property prop;
 
-@Parameters({"browser","appurl"})
+
 @BeforeTest(groups={"regression","sanity","smoke"})
 public void launchapp(String browsername,String appurl) throws InterruptedException{
 	
