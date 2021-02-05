@@ -35,12 +35,10 @@ Property prop;
 @BeforeTest(groups={"regression","sanity","smoke"})
 public void launchapp(String browsername,String appurl) throws InterruptedException{
 	
-	//prop=new Property(System.getProperty("user.dir")+"\\configuration.properties");
-//	launchbrowser(prop.getProperty("browsername"));
-//	openurl(prop.getProperty("appurl"));
-	
-	launchbrowser(browsername);
-	openurl(appurl);
+	prop=new Property(System.getProperty("user.dir")+"\\configuration.properties");
+  launchbrowser(prop.getProperty("browsername"));
+  openurl(prop.getProperty("appurl"));
+
 }
 
 

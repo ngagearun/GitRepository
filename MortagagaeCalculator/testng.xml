@@ -2,8 +2,6 @@
   
 <suite name="ApplicationName" verbose="1" >
   <test name="RegressionTesting" >
-  <parameter name="browser" value="chrome"></parameter>
-  <parameter name="appurl" value="https://candidate.psiexams.com/"></parameter>
   <groups>
   <run>
     <include name="smoke"></include>
